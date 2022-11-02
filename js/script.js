@@ -2,17 +2,47 @@ const eleGrid = document.querySelector('.grid')
 const eleBtn = document.querySelector('.btn')
 
 eleBtn.addEventListener('click', function() {
-    for (let i = 1; i <= 100; i++) {
-        const eleCell = document.createElement('div');
-        eleCell.classList.add('cell');
-        eleGrid.append(eleCell);
+    let eleSelect = document.getElementById('select').value
 
-        eleCell.innerHTML += `<div">${i}</div>`;
-        
-        eleCell.addEventListener('click', function(){
-            this.classList.toggle('active')
-            this.style.cursor = "url('cursor url with protocol'), auto";
-        })
+
+    if (document.getElementById('select').value == 'Easy') {
+        for (let i = 1; i <= 100; i++) {
+            const eleCell = document.createElement('div');
+            eleCell.classList.add('cell');
+            eleGrid.append(eleCell);
+
+            eleCell.innerHTML += `<div">${i}</div>`;
+            
+            eleCell.addEventListener('click', function(){
+                this.classList.toggle('active')
+                
+            })
+        }
+    } else if (document.getElementById('select').value == 'Hard') {
+        for (let i = 1; i <= 81; i++) {
+            const eleCell = document.createElement('div');
+            eleCell.classList.add('cellhard');
+            eleGrid.append(eleCell);
+
+            eleCell.innerHTML += `<div">${i}</div>`;
+            
+            eleCell.addEventListener('click', function(){
+                this.classList.toggle('active')
+               
+            })
+        }        
+    } else {
+        for (let i = 1; i <= 49; i++) {
+            const eleCell = document.createElement('div');
+            eleCell.classList.add('cellcrazy');
+            eleGrid.append(eleCell);
+
+            eleCell.innerHTML += `<div">${i}</div>`;
+            
+            eleCell.addEventListener('click', function(){
+                this.classList.toggle('active')
+               
+            })
+        }
     }
-
-})
+});

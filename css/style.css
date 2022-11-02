@@ -39,6 +39,26 @@ main {
     align-items: center;
 }
 
+.cellhard {
+    border:1px solid black;
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cellcrazy {
+    border:1px solid black;
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cell.active {
     background-color: salmon;
 }
