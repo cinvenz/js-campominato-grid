@@ -42,3 +42,11 @@ main {
 .cell.active {
     background-color: salmon;
 }
+
+.dnone {
+    display: none;
+}
+
+.dblock {
+    display: block;
+}
