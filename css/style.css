@@ -1,0 +1,29 @@
+.logo {
+    width: 5rem;
+}
+
+.btn {
+    background-color: lightgray;
+    color: black;
+    font-weight: bold;
+    padding: 0.1rem 1.5rem;
+}
+
+main {
+    background-color: #7FFFD4;
+}
+
+.grid {
+    margin: auto;
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+}
+
+.cell {
+
+}
+
+.cell.active {
+    background-color: salmon;
+}
