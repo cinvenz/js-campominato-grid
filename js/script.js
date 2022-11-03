@@ -3,7 +3,7 @@ const eleBtn = document.querySelector('.btn')
 
 eleBtn.addEventListener('click', function() {
     let eleSelect = document.getElementById('select').value
-
+    eleGrid.innerHTML = '';
 
     if (document.getElementById('select').value == 'Easy') {
         for (let i = 1; i <= 100; i++) {
@@ -45,4 +45,6 @@ eleBtn.addEventListener('click', function() {
             })
         }
     }
+
+    
 });
